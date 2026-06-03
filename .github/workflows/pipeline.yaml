@@ -24,4 +24,4 @@ jobs:
         run: flake8 .
 
       - name: Testes Unitários e Cobertura Mínima
-        run: pytest --cov=. --cov-fail-under=80
+        run: pytest --cov=. --cov-fail-under=90
