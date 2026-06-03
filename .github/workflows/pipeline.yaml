@@ -1,0 +1,28 @@
+name: Pipeline Demo CI/CD
+
+on:
+  push:
+    branches: [main, master]
+
+jobs:
+  qualidade:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar Código do Repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Ambiente Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Instalar Dependências
+        run: pip install -r requirements.txt
+
+      - name: Análise Estática (Linter)
+        run: pytest
+
+      - name: Testes Unitários e Cobertura Mínima
+        run: pytest --cov=. --cov-fail-under=80  
+
