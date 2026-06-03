@@ -21,8 +21,8 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Análise Estática (Linter)
-        run: pytest
+        run: flake8 .
 
       - name: Testes Unitários e Cobertura Mínima
-        run: pytest --cov=. --cov-fail-under=80  
-
+        run: pytest --cov=. --cov-fail-under=80
+        
