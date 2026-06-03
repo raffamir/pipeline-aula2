@@ -1,4 +1,4 @@
-name: Pipeline Qualidade
+name: Pipeline CI/CD
 
 on:
   push:
