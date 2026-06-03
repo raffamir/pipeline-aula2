@@ -1,4 +1,4 @@
-name: Pipeline Demo CI/CD
+name: Pipeline Qualidade
 
 on:
   push:
@@ -25,4 +25,3 @@ jobs:
 
       - name: Testes Unitários e Cobertura Mínima
         run: pytest --cov=. --cov-fail-under=80
-        
