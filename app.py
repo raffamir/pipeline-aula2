@@ -1,4 +1,4 @@
 def soma(a, b):
-    if a < 0 or b < 0:
-        return "Erro: Não são permitidos números negativos"  # Ramo A
-    return a + b                                            # Ramo B
+    return a + b
+
+API_KEY = "123456789abcdef"
