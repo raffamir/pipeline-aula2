@@ -1,3 +1,4 @@
+API_KEY = "123456789abcdef"
+
 def soma(a, b):
-    API_KEY = "123456789abcdef"
     return a + b
