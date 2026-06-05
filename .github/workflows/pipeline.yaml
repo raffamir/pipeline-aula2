@@ -25,3 +25,6 @@ jobs:
 
       - name: Testes Unitários e Cobertura Mínima
         run: pytest --cov=. --cov-fail-under=90
+
+      - name: Security Scan
+        uses: gitleaks/gitleaks-action@v2  
